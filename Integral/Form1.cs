@@ -55,7 +55,7 @@ namespace Integral
                 _rtbResult.Text = "a > b, данные введены некоректно";
                 return false;
             }
-            for (int i = 1; i <= n; i+=n/10)
+            for (int i = 1; i <= n; i+=n/5)
             {
                 time.Restart();
                 calcul.Calculate(a, b, i, x => 2 * x - Math.Log(11 * x) - 1);
