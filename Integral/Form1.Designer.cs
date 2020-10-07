@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this._tbMAX = new System.Windows.Forms.TextBox();
             this._tbMIN = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             this._tbMAX.Name = "_tbMAX";
             this._tbMAX.Size = new System.Drawing.Size(120, 20);
             this._tbMAX.TabIndex = 0;
-            this._tbMAX.Text = "143";
+            this._tbMAX.Text = "100";
             // 
             // _tbMIN
             // 
@@ -60,7 +60,7 @@
             this._tbMIN.Name = "_tbMIN";
             this._tbMIN.Size = new System.Drawing.Size(120, 20);
             this._tbMIN.TabIndex = 1;
-            this._tbMIN.Text = "12";
+            this._tbMIN.Text = "1";
             // 
             // label1
             // 
@@ -159,17 +159,17 @@
             // 
             // _chGraph
             // 
-            chartArea2.Name = "ChartArea1";
-            this._chGraph.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this._chGraph.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this._chGraph.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this._chGraph.Legends.Add(legend1);
             this._chGraph.Location = new System.Drawing.Point(201, 9);
             this._chGraph.Name = "_chGraph";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Graph";
-            this._chGraph.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Graph";
+            this._chGraph.Series.Add(series1);
             this._chGraph.Size = new System.Drawing.Size(435, 335);
             this._chGraph.TabIndex = 10;
             this._chGraph.Text = "chart1";
