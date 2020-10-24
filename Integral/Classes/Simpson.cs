@@ -27,8 +27,8 @@ namespace Integral.Classes
             {
                 S += 2 * f(a + 2 * i * h);
             }
-            return h * S / 3;
-            //return S;
+            //return h * S / 3;
+            return S;
         }
     }
 }
