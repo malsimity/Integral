@@ -32,7 +32,7 @@ namespace Integral
             }
             return null;
         }
-        private bool Calculate()
+        private void Calculate()
         {
             _chGraph.Series["Graph"].Points.Clear();
             double a = Convert.ToDouble(_tbMIN.Text);
@@ -44,18 +44,10 @@ namespace Integral
             TimeSpan resulttime;
             if ((calcul is Simpson) && (n % 2 == 1))
             {
-                _rtbResult.Text = "число шагов нечётное, выберите другой метод или чётное число шагов";
-                return false;
+                Exception ex = new ArgumentException("Число шагов нечётное, выберите другой метод или чётное число шагов");
+                throw ex;
             }
-            if (a > b)
-            {
-                double t = a;
-                a = b;
-                b = t;
-                _rtbResult.Text = "a > b, данные введены некоректно";
-                return false;
-            }
-            for (int i = 1; i <= n; i+=n/5)
+            for (int i = 1; i <= n; i += n / 5)
             {
                 time.Restart();
                 calcul.Calculate(a, b, i, x => 2 * x - Math.Log(11 * x) - 1);
@@ -65,7 +57,6 @@ namespace Integral
             }
             result = calcul.Calculate(a, b, n, x => 2 * x - Math.Log(11 * x) - 1);
             _rtbResult.Text = $"Ответ: {result}";
-            return true;
         }
         private void _btCalculate_Click(object sender, EventArgs e)
         {
