@@ -74,5 +74,22 @@ namespace Integral_Tests
             //assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void Integral_Trapezoid_0_0_10_Correct()
+        {
+
+            //arrange
+            double expected = 0;
+            double a = 0;
+            double b = 10;
+            int n = 10000;
+            ICalculator calcul = new TrapezoidCalc();
+
+            //act
+            double actual = calcul.Calculate(a, b, n, x => 0);
+
+            //assert
+            Assert.AreEqual(expected, actual, 0.001);
+        }
     }
 }
