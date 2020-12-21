@@ -52,6 +52,7 @@
     <Compile Include="Simpson_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trapezoid_Tests.cs" />
+    <Compile Include="Rectangle_Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

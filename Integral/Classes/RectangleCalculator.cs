@@ -2,7 +2,7 @@
 
 namespace Integral.Classes
 {
-    class RectangleCalculator : ICalculator
+    public class RectangleCalculator : ICalculator
     {
         public double Calculate(double a, double b, int n, Func<double, double> f)
         {
